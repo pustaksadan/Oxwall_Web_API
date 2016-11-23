@@ -1,0 +1,37 @@
+	{if isset($response.error)}
+		<h3>Authorization Failed!</h3>
+		<p>
+			It seems authorization has been denied for the following reasons:
+		</p>
+		<ul>
+			<li>
+				{if isset($response.error.error_description)}
+					{$response.error.error_description}
+					{if isset($response.error.error_uri)}
+						(<a href="{$response.error.error_uri}">more information</a>)
+					{/if}
+				{else}
+					<em>authorization server did not supply an error message</em>
+				{/if}
+			</li>
+		</ul>
+	{else if isset($response.token)}
+		<h3>Authorization Granted!</h3>
+		<pre><code>  Access Token: {$response.token}  </code></pre>
+		{if isset($response.endpoint) }
+		<div class="help"><em>The API call can be seen at <a href="{$response.endpoint}" target="_blank">{$response.endpoint}</a></em></div>	
+		{/if}
+	{else}
+	    <h3>Authorization Error</h3>
+		<p>
+			{if isset($response.error.error_description)}
+				{$response.error.error_description}
+				{if isset($response.error.error_uri)}
+					(<a href="{$response.error.error_uri}">more information</a>)
+				{/if}
+			{/if}
+		</p>
+		{if isset($basePath)}
+			<a href="{$basePath}">back</a>
+		{/if}
+	{/if}

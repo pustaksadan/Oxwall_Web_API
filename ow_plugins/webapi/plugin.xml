@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>Web API</name>
+	<key>webapi</key>
+	<description>Adds support to RESTful Web APIs</description>
+        <author>Pustak Sadan</author>
+        <authorEmail>pustaksadan.india@gmail.com</authorEmail>
+	<authorUrl>http://www.oxwall.org/user/pustaks</authorUrl>
+	<developerKey>1d7ad751a54d1c32e1141a60bebb114c</developerKey>
+        <build>0001</build>
+        <copyright>(C) 2016 PustakSadan. All rights reserved.</copyright>
+	<license>Oxwall Store Commercial License</license>
+        <licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>
