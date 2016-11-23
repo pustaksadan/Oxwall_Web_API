@@ -15,3 +15,10 @@ This is an Oxwall Plugin to support RESTful web APIs. Integration of Restler wit
 1. Web Client Registration
 2. Handling of refresh token
 3. Web APIs implementation of plugins targeted for Web API support.
+
+##INSTALLATION
+1. Merge define.h into existing file
+2. Copy "restler"  into "ow_libraries" folder.
+3. copy "webapi" into "ow_plugings" folder
+4. Go to admin section and install "Web API" Plugin
+
